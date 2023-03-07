@@ -195,19 +195,19 @@
 
 <link name="link1_1">
   <inertial>
-    <origin xyz="0.007423288821467861 0.0715369063096841 0.2658398914844642" rpy="0 0 0"/>
+    <origin xyz="0.007423288821467861 0.00 0.2658398914844642" rpy="0 0 0"/>
     <mass value="2.71512828709575"/>
     <inertia ixx="0.007615" iyy="0.042345" izz="0.040801" ixy="2.6e-05" iyz="0.0" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.008303 0.180436 -0.013973" rpy="0 0 0"/>
+    <origin xyz="0.008303 0.108436 -0.013973" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://mmrobot_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.008303 0.180436 -0.013973" rpy="0 0 0"/>
+    <origin xyz="0.008303 0.108436 -0.013973" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://mmrobot_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -376,14 +376,14 @@
 </joint>
 
 <joint name="joint1" type="continuous">
-  <origin xyz="-0.008303 -0.180436 0.013973" rpy="0 0 0"/>
+  <origin xyz="-0.008303 -0.108436 0.013973" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="link1_1"/>
   <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
 <joint name="joint2" type="continuous">
-  <origin xyz="-0.0545 0.071537 0.279064" rpy="0 0 0"/>
+  <origin xyz="-0.0545 0.0 0.279064" rpy="0 0 0"/>
   <parent link="link1_1"/>
   <child link="link2_1"/>
   <axis xyz="1.0 0.0 -0.0"/>
